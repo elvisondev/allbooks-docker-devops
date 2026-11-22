@@ -1,0 +1,10 @@
+
+services:
+  allbooks:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: allbooks
+    ports:
+      - "8080:80"
+    restart: unless-stopped
